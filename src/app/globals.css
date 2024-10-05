@@ -1,7 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+:root {
+    --blue: rgb(0, 11, 19);
+    --blue0: rgb(0, 20, 35);
+    /*#001423*/
+    --blue1: rgb(1, 29, 51);
+    --blue2: rgb(53, 131, 191);
+    --blue3: rgb(116, 161, 196);
+    /* #74a1c4 */
+    --blue4: rgb(154, 175, 193);
+    --blue5: rgb(180, 214, 244);
+    --creme: rgb(238, 228, 185);
+    --white: rgb(255, 255, 255);
+    --white0: rgb(242, 244, 245);
+    --black: rgb(0, 0, 0);
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 :root {
   --background: #ffffff;
   --foreground: #171717;
