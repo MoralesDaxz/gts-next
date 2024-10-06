@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import { IoClose } from "react-icons/io5";
 const NavBarSM = () => {
   return (
-    <div>NavBarSM</div>
-  )
-}
+    <div className="bg-[--white0] w-full">
+      <IoClose />
+    </div>
+  );
+};
 
-export default NavBarSM
+export default NavBarSM;
