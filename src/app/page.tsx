@@ -1,15 +1,11 @@
-import DisplayNavBar from "@/components/NavBar/DisplayNavBar";
-
+import MainLogo from "@/components/mainLogo/MainLogo";
 
 export default function Home() {
   return (
-    <>
-      <DisplayNavBar/>
-      <main className="">
-        <h1>Home</h1>
-      </main>
+    <main className="">
+      <MainLogo />
       <section className=""></section>
       <footer className=""></footer>
-    </>
+    </main>
   );
 }

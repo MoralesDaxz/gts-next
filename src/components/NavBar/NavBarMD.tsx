@@ -2,7 +2,7 @@ import React from 'react'
 
 const NavBarMD = () => {
   return (
-    <div>NavMovil</div>
+    <div>Nav PC</div>
   )
 }
 
