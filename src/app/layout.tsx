@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ControlDisplayProvider } from "../context/ControlDisplay";
-import DisplayNavBar from "../components/navBar/DisplayNavBar";
+import DisplayNavBar from "@/components/nav/DisplayNavBar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
