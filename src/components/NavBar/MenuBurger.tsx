@@ -8,10 +8,8 @@ const MenuBurger:FC <Props> = ({ classMenu, setClassMenu }) => {
     <div className="absolute right-2 top-3">
       <div
         className={classMenu}
-        onClick={(e) => {
-          classMenu === "menuBurger"
-            ? setClassMenu("close")
-            : setClassMenu("menuBurger");
+        onClick={() =>   {
+          setClassMenu(classMenu === "menuBurger" ? "close" : "menuBurger");
         }}
       >
         <div className="bar1"></div>

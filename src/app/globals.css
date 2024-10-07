@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,16 +15,18 @@
   --blue5: rgb(180, 214, 244);
   --creme: rgb(238, 228, 185);
   --white: rgb(255, 255, 255);
-  --white0: rgb(242, 244, 245);
+  --white0: rgb(227, 232, 235);
   --black: rgb(0, 0, 0);
 }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 :root {
-  font-family: "Outfit", sans-serif;
+  font-family: "Outfit", "outfit",sans-serif;
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -89,4 +92,11 @@ body {
     -webkit-transform: translateX(calc(-200px * 9));
     transform: translateX(calc(-200px * 9));
   }
+}
+
+/* BG - Main Logo */
+.bgMain {
+  background: rgb(4,18,31);
+  background: linear-gradient(0deg, rgba(4,18,31,1) 0%, rgba(7,58,103,1) 76%, rgba(26,89,144,1) 100%);
+  
 }

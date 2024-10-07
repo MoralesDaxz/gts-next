@@ -2,10 +2,14 @@ import MainLogo from "@/components/mainLogo/MainLogo";
 
 export default function Home() {
   return (
-    <main className="">
-      <MainLogo />
-      <section className=""></section>
+    <>
+      <main>
+        <MainLogo />
+        <section className="">
+          
+        </section>
+      </main>
       <footer className=""></footer>
-    </main>
+    </>
   );
 }

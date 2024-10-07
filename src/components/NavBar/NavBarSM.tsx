@@ -4,22 +4,25 @@ import MenuBurger from "./MenuBurger";
 import Link from "next/link";
 import Image from "next/image";
 import icono from "@/assets/img/icono.png";
+import { useControlDisplay } from "@/context/ControlDisplay";
 const NavBarSM = () => {
   const [classMenu, setClassMenu] = useState("menuBurger");
+  const { windowScroll } = useControlDisplay();
+  const bgNavBarDefault = "text-black bg-[--white0] rounded-br-lg  rounded-bl-lg";
+  const bgNavBarScrolled =
+    "text-black  bg-[#b1b4b6c7] backdrop-blur-sm  rounded-br-lg  rounded-bl-lg";
 
   return (
-    <div className="text-black">
-      {/*    <div className="bg-[--white0] flex flex-col gap-3 transition-all duration-500 text-[black]"></div> */}
-
+    <div className={windowScroll > 50 ? bgNavBarScrolled : bgNavBarDefault}>
       <MenuBurger classMenu={classMenu} setClassMenu={setClassMenu} />
       {classMenu === "close" ? (
-        <div className="bg-[--white0] transition-all duration-300 h-32 flex flex-col justify-center gap-4 p-2 text-lg font-medium">
+        <div className=" transition-all  duration-300 h-32 flex flex-col justify-center gap-4 py-2 px-4 text-lg font-medium">
           <Link href={"#servicio"}>Servicios</Link>
           <Link href={"#cliente"}>Nuestros Clientes</Link>
           <Link href={"#contacto"}>Contacto</Link>
         </div>
       ) : (
-        <div className="transition-all duration-300 h-16 bg-[--white0] p-2">
+        <div className="transition-all duration-300 h-16 p-2">
           <Link href={"/"}>
             <Image
               src={icono}
