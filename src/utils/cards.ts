@@ -1,9 +1,9 @@
-import hand from "/assets/mainLogo/hand.svg";
-import truck from "/assets/mainLogo/truck.svg";
-import services from "/assets/mainLogo/services.svg";
-import logistic from "/assets/mainLogo/logistic.svg";
-import storage from "/assets/mainLogo/storage.svg";
-import stock from "/assets/mainLogo/stock.svg";
+import hand from "@/assets/mainLogo/hand.svg";
+import truck from "@/assets/mainLogo/truck.svg";
+import services from "@/assets/mainLogo/services.svg";
+import logistic from "@/assets/mainLogo/logistic.svg";
+import storage from "@/assets/mainLogo/storage.svg";
+import stock from "@/assets/mainLogo/stock.svg";
 
 /* MainLogo - Cards */
 const infoCards = [

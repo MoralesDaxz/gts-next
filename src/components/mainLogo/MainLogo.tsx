@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/assets/img/logo-principal.png";
+import logo from "@/assets/img/logo-principal.png";
 import Image from "next/image";
 import CardsInfo from "../cardsInfo/CardsInfo";
 const MainLogo = () => {

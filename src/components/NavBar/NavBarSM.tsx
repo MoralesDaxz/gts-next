@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import MenuBurger from "./MenuBurger";
 import Link from "next/link";
 import Image from "next/image";
-import icono from "/assets/img/icono.png";
+import icono from "@/assets/img/icono.png";
 import { useControlDisplay } from "@/context/ControlDisplay";
 const NavBarSM = () => {
   const [classMenu, setClassMenu] = useState("menuBurger");

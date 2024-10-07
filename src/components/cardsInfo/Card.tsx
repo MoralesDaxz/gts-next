@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React, { FC, useState } from "react";
-import top from "/assets/mainLogo/top.svg";
+import top from "@/assets/mainLogo/top.svg";
 type Props = {
   src: string;
   alt: string;
