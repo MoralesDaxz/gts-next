@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
-import DisplayNavBar from "@/components/navBar/DisplayNavBar";
 import { ControlDisplayProvider } from "@/context/ControlDisplay";
+import DisplayNavBar from "@/components/navBar/DisplayNavBar";
 
 /* const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
