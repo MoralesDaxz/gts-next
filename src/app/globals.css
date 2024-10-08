@@ -119,9 +119,9 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.9; 
-
-  /* filter: blur(2px); */
+  
+  filter: brightness(1.10);
+ 
   /* Ajusta el valor de opacidad según sea necesario */
   z-index: -1;
 }
