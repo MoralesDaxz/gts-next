@@ -42,7 +42,23 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Outfit, sans-serif;
+ /*  color: #d9dfe45e; */
 }
+/* p {
+  @apply text-body-base;
+}
+
+@media (min-width: 640px) {
+  p {
+    @apply text-body-lg; 
+  }
+}
+
+@media (min-width: 768px) {
+  p {
+    @apply text-body-md; 
+  }
+} */
 
 @layer utilities {
   .text-balance {
@@ -130,4 +146,27 @@ body {
 .bgServices > * {
   position: relative;
   z-index: 1;
+}
+
+.custom-shape-divider-top-1728573729 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+}
+
+.custom-shape-divider-top-1728573729 svg {
+  position: absolute;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 59px;
+
+}
+
+.custom-shape-divider-top-1728573729 .shape-fill {
+  fill: #00000000;
+
 }

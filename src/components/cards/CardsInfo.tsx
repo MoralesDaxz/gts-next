@@ -1,9 +1,10 @@
-
 import React from "react";
 import Card from "./Card";
 import { infoCards } from "@/utils";
+
 const CardsInfo = () => {
   return (
+    <>
     <section className="flex flex-wrap justify-center gap-3 gap-y-5 mt-[80px] max-w-[1100px]">
       {infoCards.map((item, i) => {
         return (
@@ -16,12 +17,8 @@ const CardsInfo = () => {
           />
         );
       })}
-      {/*  <Cards src={hand} alt='gestión_de_mercancia'>
-        <p>
-
-        </p>
-     </Cards> */}
     </section>
+    </>
   );
 };
 

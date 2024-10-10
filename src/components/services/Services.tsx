@@ -3,12 +3,13 @@ import React from "react";
 import trucks from "@/assets/services/trucks.png";
 import indicator from "@/assets/services/indicator.png";
 import pack from "@/assets/services/pack.png";
+
 const Services = () => {
   return (
     <section className="bgServices flex flex-col items-center text-black">
-      <h1>Servicios</h1>
-      <article className={'flex justify-between items-center max-w-[1000px]'}>
-        <section className="w-[60%]" >
+      <h1 className="text-title">Servicios</h1>
+      <article className={"flex justify-between items-center max-w-[1000px]"}>
+        <section className="w-[60%]">
           <h3>Ruta diaria fija</h3>
           <ul>
             <li>Furgoneta</li>
@@ -31,7 +32,7 @@ const Services = () => {
           />
         </section>
       </article>
-      <article className={'flex justify-between max-w-[1000px]'}>
+      <article className={"flex justify-between max-w-[1000px]"}>
         <section className="w-[60%]">
           <h3>Tarifa por Kilómetros</h3>
 
@@ -50,8 +51,8 @@ const Services = () => {
           />
         </section>
       </article>
-      <article className={'flex justify-between max-w-[1000px]'}>
-        <section  className="w-[60%]">
+      <article className={"flex justify-between max-w-[1000px]"}>
+        <section className="w-[60%]">
           <h3>Tarifa Flex</h3>
           <ul>
             <li>Entregas</li>
