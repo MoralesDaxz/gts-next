@@ -5,7 +5,7 @@ import CardsInfo from "../cards/CardsInfo";
 
 const MainLogo = () => {
   return (
-    <section className="bgMain w-full min-h-screen flex flex-col items-center gap-3 pt-[125px] md:pt-[80px] pb-6">
+    <section className="bgMain w-full min-h-screen flex flex-col items-center gap-6 pt-[125px] md:pt-[80px] pb-2">
       <Image
         src={logo}
         width={500}

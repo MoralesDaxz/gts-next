@@ -13,26 +13,26 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontSize: {
-        header: ["1.2rem", { lineHeight: "1.75rem", fontWeight: "400" }],
-        "header-sm": ["1.2rem", { lineHeight: "1.7rem", fontWeight: "500" }],
-        "header-md": ["1.7rem", { lineHeight: "2.2rem", fontWeight: "500" }],
-        "header-lg": ["2.2rem", { lineHeight: "3rem", fontWeight: "500" }],
-
-        parag: [".8rem", { lineHeight: "1.1rem", fontWeight: "300" }],
-        "parag-sm": [".9rem", { lineHeight: "1.1rem", fontWeight: "300" }],
-        "parag-md": ["1rem", { lineHeight: "1.2", fontWeight: "300" }],
-        "parag-lg": ["1.2", { lineHeight: "1.3", fontWeight: "400" }],
-
-        subtitle: ["1rem", { lineHeight: "1.3rem", fontWeight: "400" }],
-        "subtitle-sm": ["1rem", { lineHeight: "1.3rem", fontWeight: "500" }],
-        "subtitle-md": ["1.2rem", { lineHeight: "1.6", fontWeight: "500" }],
-        "subtitle-lg": ["1.5", { lineHeight: "1.8", fontWeight: "500" }],
-
-        title: ["1.2rem", { lineHeight: "1.75rem", fontWeight: "400" }],
-        "title-sm": ["1.5rem", { lineHeight: "2rem", fontWeight: "500" }],
-        "title-md": ["1.9rem", { lineHeight: "2.2rem", fontWeight: "500" }],
-        "title-lg": ["2.5rem", { lineHeight: "3rem", fontWeight: "500" }],
-      },
+        header: ["1.4rem", { lineHeight: "1.8rem", fontWeight: "400" }],
+        "header-sm": ["1.4rem", { lineHeight: "1.8rem", fontWeight: "500" }],
+        "header-md": ["1.9rem", { lineHeight: "2.3rem", fontWeight: "500" }],
+        "header-lg": ["2.4rem", { lineHeight: "2.8rem", fontWeight: "500" }],
+      
+        parag: ["1rem", { lineHeight: "1.4rem", fontWeight: "300" }],
+        "parag-sm": ["1.1rem", { lineHeight: "1.5rem", fontWeight: "300" }],
+        "parag-md": ["1.2rem", { lineHeight: "1.6rem", fontWeight: "300" }],
+        "parag-lg": ["1.4rem", { lineHeight: "1.8rem", fontWeight: "400" }],
+      
+        subtitle: ["1.2rem", { lineHeight: "1.6rem", fontWeight: "400" }],
+        "subtitle-sm": ["1.2rem", { lineHeight: "1.6rem", fontWeight: "500" }],
+        "subtitle-md": ["1.4rem", { lineHeight: "1.8rem", fontWeight: "500" }],
+        "subtitle-lg": ["1.7rem", { lineHeight: "2.1rem", fontWeight: "500" }],
+      
+        title: ["1.4rem", { lineHeight: "1.8rem", fontWeight: "400" }],
+        "title-sm": ["1.7rem", { lineHeight: "2.1rem", fontWeight: "500" }],
+        "title-md": ["2.1rem", { lineHeight: "2.5rem", fontWeight: "500" }],
+        "title-lg": ["2.7rem", { lineHeight: "3.1rem", fontWeight: "500" }],
+      }      
     },
   },
   plugins: [],
