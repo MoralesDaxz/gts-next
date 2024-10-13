@@ -44,21 +44,7 @@ body {
   font-family: Outfit, sans-serif;
   /*  color: #d9dfe45e; */
 }
-/* p {
-  @apply text-body-base;
-}
 
-@media (min-width: 640px) {
-  p {
-    @apply text-body-lg; 
-  }
-}
-
-@media (min-width: 768px) {
-  p {
-    @apply text-body-md; 
-  }
-} */
 
 @layer utilities {
   .text-balance {
@@ -113,12 +99,10 @@ body {
 /* BG - Main Logo */
 .bgMain {
   background: rgb(4, 18, 31);
-  background: linear-gradient(
-    180deg,
-    rgba(4, 18, 31, 1) 0%,
-    rgba(7, 58, 103, 1) 76%,
-    rgba(26, 89, 144, 1) 100%
-  );
+  background: linear-gradient(180deg,
+      rgba(4, 18, 31, 1) 0%,
+      rgba(7, 58, 103, 1) 76%,
+      rgba(26, 89, 144, 1) 100%);
 }
 
 /* BG - Services */
@@ -141,13 +125,68 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(1.25);
-/*   filter: blur(2px); */
+  /*   filter: blur(2px); */
   /* Ajusta el valor de opacidad según sea necesario */
   z-index: -1;
 }
 
 /* Asegúrate de que el contenido dentro de .bg-companies esté en un contexto superior al pseudo-elemento */
-.bgServices > * {
+.bgServices>* {
   position: relative;
   z-index: 1;
+}
+
+/* Carousel - Services */
+
+.galeria {
+  display: flex;
+  width: 95%;
+  height: 80px;
+}
+
+.galeria img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: contain;
+  opacity: .7;
+  transition: .5s ease;
+}
+
+.galeria img:hover {
+  width: 20%;
+  opacity: 1;
+  filter: contrast(110%);
+}
+
+@media (min-width: 768px) {
+  .galeria {
+    width: 97%;
+    height: 180px;
+    margin-top: 1.5rem;
+
+  }
+
+  .galeria img:hover {
+    width: 20%;
+    opacity: 1;
+    filter: contrast(110%);
+  }
+}
+/* EcoBox */
+.bgEco{
+  background-image: url("/assets/ecobox/bg_white.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.bgLeaf{
+  background-image: url("/assets/ecobox/leaf.png");
+  background-size: 95%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.shape-fill {
+  fill: #F8F2F2;
 }

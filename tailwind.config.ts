@@ -18,10 +18,10 @@ const config: Config = {
         "header-md": ["1.9rem", { lineHeight: "2.3rem", fontWeight: "500" }],
         "header-lg": ["2.4rem", { lineHeight: "2.8rem", fontWeight: "500" }],
       
-        parag: ["1rem", { lineHeight: "1.4rem", fontWeight: "300" }],
-        "parag-sm": ["1.1rem", { lineHeight: "1.5rem", fontWeight: "300" }],
-        "parag-md": ["1.2rem", { lineHeight: "1.6rem", fontWeight: "300" }],
-        "parag-lg": ["1.4rem", { lineHeight: "1.8rem", fontWeight: "400" }],
+        parag: ["1rem", { lineHeight: "1.1rem", fontWeight: "300" }],
+        "parag-sm": ["1.1rem", { lineHeight: "1.1rem", fontWeight: "300" }],
+        "parag-md": ["1.2rem", { lineHeight: "1.25rem", fontWeight: "300" }],
+        "parag-lg": ["1.4rem", { lineHeight: "1.5rem", fontWeight: "400" }],
       
         subtitle: ["1.2rem", { lineHeight: "1.6rem", fontWeight: "400" }],
         "subtitle-sm": ["1.2rem", { lineHeight: "1.6rem", fontWeight: "500" }],

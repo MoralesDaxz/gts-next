@@ -13,7 +13,7 @@ const MainLogo = () => {
         alt="Logo"
         className="w-[95%] sm:w-[50%] max-w-[600px]"
       />
-      <h1 className="text-header-sm md:text-header-md text-center">
+      <h1 className="text-header-sm md:text-header-md lg:text-header-lg text-center">
         Gestión Transporte y Servicios a toda la Península
       </h1>
       <CardsInfo />
