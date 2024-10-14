@@ -92,7 +92,7 @@ const Services = () => {
             alt={"paqueteria"}
             width={400}
             height={400}
-            className="w-[150px]"
+            className="w-[150px] shadow-[#1f1f1ffa] drop-shadow-md"
           />
         </section>
       </article>
@@ -100,7 +100,7 @@ const Services = () => {
         <h3 className="text-center text-title-sm md:text-title-md lg:text-title-lg">
           Flotas en exclusiva a disposición del cliente
         </h3>
-        <Carousel imgHeight={220} imgWidth={250} heightContainer="200"  arr={carsImages}/>
+        <Carousel imgHeight={200} imgWidth={200} heightContainer="250"  arr={carsImages}/>
       </article>
     </section>
   );

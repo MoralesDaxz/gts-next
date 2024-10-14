@@ -16,21 +16,26 @@ type Props = {
 const CarouselCars: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer }) => {
   return (
     <Swiper
-      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1150px]`}
+      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1000px]`}
       effect="slide"
       spaceBetween={10}
       breakpoints={{
+        340: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+          pagination:false
+        },
         640: {
           slidesPerView: 2,
           spaceBetween: 10,
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 10,
+          spaceBetween: 30,
         },
       }}
       loop={true}
@@ -40,13 +45,13 @@ const CarouselCars: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer }) =
     >
       {arr?.map((item, i) => {
         return (
-          <SwiperSlide key={i} className="w-auto">
+          <SwiperSlide key={i} className={`w-${imgWidth} ${imgHeight}`}>
             <Image
               src={item}
-              width={600}
-              height={600}
+              width={400}
+              height={400}
               alt={"Car_" + (i + 1)}
-              className={` w-${imgWidth} h-${imgHeight}`}
+              className={`w-full h-full`}
             />
           </SwiperSlide>
         );

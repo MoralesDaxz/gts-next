@@ -13,24 +13,36 @@ type Props = {
   heightContainer: string;
   arr: string[];
 };
-const CarouselCompanies: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer }) => {
+const CarouselCompanies: FC<Props> = ({
+  imgWidth,
+  imgHeight,
+  arr,
+  heightContainer,
+}) => {
   return (
     <Swiper
-      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1150px]`}
+      className={`w-full h-[90px] sm:h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1000px]`}
       effect="slide"
-      spaceBetween={10}
       breakpoints={{
-        640: {
+        330: {
           slidesPerView: 2,
           spaceBetween: 10,
+          pagination: false,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          pagination: false,
         },
         768: {
           slidesPerView: 3,
           spaceBetween: 20,
+          pagination: false,
         },
         1024: {
           slidesPerView: 4,
           spaceBetween: 40,
+          pagination: false,
         },
       }}
       loop={true}
@@ -40,13 +52,16 @@ const CarouselCompanies: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer
     >
       {arr?.map((item, i) => {
         return (
-          <SwiperSlide key={i} className="w-auto p-2">
+          <SwiperSlide
+            key={i}
+            className={`sm:w-${imgWidth} sm:h-${imgHeight} p-2 border-solid border-2 border-[blue2] bg-[#0000009c] rounded-lg`}
+          >
             <Image
               src={item}
               width={600}
               height={600}
               alt={"Car_" + (i + 1)}
-              className={` w-${imgWidth} h-${imgHeight}`}
+              className={`w-full h-full `}
             />
           </SwiperSlide>
         );

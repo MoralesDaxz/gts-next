@@ -1,16 +1,16 @@
 import React from "react";
-import Carousel from "../carousel/CarouselCars";
+
 import { companiesImgages } from "@/utils/companies/companies";
 import CarouselCompanies from "../carousel/CarouselCompanies";
 const Companies = () => {
   return (
-    <div className="relative bg-[--blue0] min-h-screen text-white text-center flex flex-col gap-4">
-      <h2 className="text-title-sm md:text-title-md lg:text-title-lg mt-6">
+    <div className="bg-[--blue0] text-white text-center flex flex-col justify-between pt-[30px] sm:pt-[60px]">
+      <h2 className="text-title-sm md:text-title-md lg:text-title-lg">
         Empresas que confían en nosotros
       </h2>
 
-      <CarouselCompanies imgHeight={180} imgWidth={150} heightContainer="200" arr={companiesImgages}></CarouselCompanies>
-      <p className="text-parag-sm md:text-parag-sm lg:text-parag-lg">
+      <CarouselCompanies imgHeight={100} imgWidth={150} heightContainer="220" arr={companiesImgages}/>
+      <p className="self-center text-parag-sm md:text-parag-md lg:text-parag-lg my-10 w-[80%] md:w-[70%] max-w-[900px]">
         En nuestra empresa de <strong>servicios y transportes de carga</strong>,
         reconocemos nuestros clientes como el pilar fundamental de nuestro
         éxito. En cada envío, no solo entregamos mercancías, sino también
