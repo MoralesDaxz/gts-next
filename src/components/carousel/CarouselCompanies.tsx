@@ -1,25 +1,22 @@
-'use client'
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Scrollbar, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-const Carousel = () => {
-  const arrayImagenes = [
-    "https://i.ibb.co/ZS7zcgp/vehiculo1.png",
-    "https://i.ibb.co/Y0kgy61/vehiculo2.png",
-    "https://i.ibb.co/cLyZ7tH/vehiculo3.png",
-    "https://i.ibb.co/6YpWCWm/vehiculo4.png",
-    "https://i.ibb.co/hC6wvV4/vehiculo5.png",
-    "https://i.ibb.co/VBMPrQY/vehiculo6.png",
-  ];
-
+type Props = {
+  imgWidth: number;
+  imgHeight: number;
+  heightContainer: string;
+  arr: string[];
+};
+const CarouselCompanies: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer }) => {
   return (
     <Swiper
-      className="w-full h-auto mt-10 mb-4 text-black place-content-center max-w-[1150px]"
+      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1150px]`}
       effect="slide"
       spaceBetween={10}
       breakpoints={{
@@ -29,11 +26,11 @@ const Carousel = () => {
         },
         768: {
           slidesPerView: 3,
-          spaceBetween: 10,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 10,
+          spaceBetween: 40,
         },
       }}
       loop={true}
@@ -41,15 +38,15 @@ const Carousel = () => {
       pagination={{ clickable: true }}
       modules={[Pagination, Scrollbar, Autoplay]}
     >
-      {arrayImagenes.map((item, i) => {
+      {arr?.map((item, i) => {
         return (
-          <SwiperSlide key={i} className="w-auto h-full">
+          <SwiperSlide key={i} className="w-auto p-2">
             <Image
               src={item}
-              width={250}
-              height={0}
+              width={600}
+              height={600}
               alt={"Car_" + (i + 1)}
-              className=" mx-auto"
+              className={` w-${imgWidth} h-${imgHeight}`}
             />
           </SwiperSlide>
         );
@@ -58,4 +55,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselCompanies;

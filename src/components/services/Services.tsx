@@ -3,7 +3,8 @@ import React from "react";
 import trucks from "@/assets/services/trucks.png";
 import scale from "@/assets/services/scale.png";
 import pack from "@/assets/services/pack.png";
-import Carousel from "@/components/carousel/Carousel";
+import Carousel from "@/components/carousel/CarouselCars";
+import { carsImages } from "@/utils/services/car";
 
 const Services = () => {
   return (
@@ -95,11 +96,11 @@ const Services = () => {
           />
         </section>
       </article>
-      <article className="w-full h-[320px]">
+      <article className="w-full">
         <h3 className="text-center text-title-sm md:text-title-md lg:text-title-lg">
           Flotas en exclusiva a disposición del cliente
         </h3>
-        <Carousel/>
+        <Carousel imgHeight={220} imgWidth={250} heightContainer="200"  arr={carsImages}/>
       </article>
     </section>
   );

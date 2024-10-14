@@ -6,7 +6,7 @@ const EcoBox = () => {
   return (
     <section className="bgEco w-full text-[--blue0]">
       <div className=" flex items-center justify-center w-full bgLeaf px-20 py-10 min-h-[500px]">
-        <div className="flex justify-center items-center gap-4 backdrop-blur-md rounded-lg max-w-[1000px]">
+        <div className="flex justify-around items-center sm:gap-3 lg:gap-8 backdrop-blur-md rounded-lg max-w-[1000px]">
           <article className="w-0 md:w-[50%] hidden md:block">
             <Image
               src={delivery}
@@ -14,7 +14,7 @@ const EcoBox = () => {
               height={500}
               className="rounded-md shadow-[#111111c7] shadow-md"
               alt="entrega_paquetereria"
-            ></Image>
+            />
           </article>
           <article className="w-full md:w-[50%]">
             <p className="text-header sm:text-header-sm italic">
