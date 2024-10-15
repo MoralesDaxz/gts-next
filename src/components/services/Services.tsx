@@ -14,10 +14,10 @@ const Services = () => {
       </h1>
       <article
         className={
-          "flex justify-between items-center max-w-[1000px] bg-[#fffdfd80] p-2 rounded-md"
+          "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
       >
-        <section className="w-[60%] flex flex-col gap-4 ">
+        <section className="sm:w-[60%] flex flex-col gap-4 ">
           <h3 className="text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg">
             Ruta diaria fija
           </h3>
@@ -32,22 +32,22 @@ const Services = () => {
             alternos o día fijo, solicite presupuesto sin compromiso.
           </p>
         </section>
-        <section className="w-[30%] flex justify-center items-center">
+        <section className="sm:w-[30%] flex justify-center items-center">
           <Image
             src={trucks}
             alt={"flota"}
             width={400}
             height={400}
-            className="w-full"
+            className="w-[80%] sm:w-full"
           />
         </section>
       </article>
       <article
         className={
-          "flex justify-between items-center max-w-[1000px] bg-[#fffdfd80] p-2 rounded-md"
+          "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
       >
-        <section className="w-[60%] flex flex-col gap-4">
+        <section className="sm:w-[60%] flex flex-col gap-4">
           <h3 className="text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg">
             Tarifa por Kilómetros
           </h3>
@@ -56,22 +56,22 @@ const Services = () => {
             península, carga completa y exclusiva.
           </p>
         </section>
-        <section className="w-[30%] flex justify-center items-center">
+        <section className="sm:w-[30%] flex justify-center items-center">
           <Image
             src={scale}
             alt={"kilometraje"}
             width={200}
             height={200}
-            className="w-full"
+            className="w-[80%] sm:w-full"
           />
         </section>
       </article>
       <article
         className={
-          "flex justify-between items-center max-w-[1000px] bg-[#fffdfd80] p-2 rounded-md"
+          "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
       >
-        <section className="w-[60%] flex flex-col gap-4">
+        <section className="sm:w-[60%] flex flex-col gap-4">
           <h3 className="text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg">
             Tarifa Flex
           </h3>
@@ -86,18 +86,18 @@ const Services = () => {
             en los costes y entregas.
           </p>
         </section>
-        <section className="w-[30%] flex justify-center items-center">
+        <section className="sm:w-[30%] flex justify-center items-center">
           <Image
             src={pack}
             alt={"paqueteria"}
             width={400}
             height={400}
-            className="w-[150px] shadow-[#1f1f1ffa] drop-shadow-md"
+            className="w-[80%] sm:w-full shadow-[#1f1f1ffa] drop-shadow-md"
           />
         </section>
       </article>
       <article className="w-full">
-        <h3 className="text-center text-title-sm md:text-title-md lg:text-title-lg">
+        <h3 className="text-center text-title-sm md:text-title-md lg:text-title-lg mt-5">
           Flotas en exclusiva a disposición del cliente
         </h3>
         <Carousel imgHeight={200} imgWidth={200} heightContainer="250"  arr={carsImages}/>

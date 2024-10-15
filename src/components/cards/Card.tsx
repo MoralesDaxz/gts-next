@@ -18,7 +18,7 @@ const Card: FC<Props> = ({ src, alt, prf, title, children }) => {
     "h-[130px] md:h-[110px] ease-in";
   return (
     <article className={classContain} onClick={() => setIsOpen(!isOpen)}>
-      <h2 className=" text-subtitle-sm md:text-subtitle-md ">{title}</h2>
+      <h2 className=" text-subtitle-sm md:text-subtitle-md">{title}</h2>
       <Image
         src={src}
         width={300}

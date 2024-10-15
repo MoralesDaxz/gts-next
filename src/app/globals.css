@@ -173,7 +173,7 @@ body {
   }
 }
 /* EcoBox */
-.bgEco {
+.bgWhite {
   background-image: url("/assets/ecobox/bg_white.jpg");
   background-size: cover;
   background-position: center;
@@ -213,4 +213,12 @@ body {
     height: 550px;
     background-position: 0px -100px;
   }
+}
+/* Statistics */
+.bgStat{
+  background-image: url("/assets/ecobox/bg_white.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
