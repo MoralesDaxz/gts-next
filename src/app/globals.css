@@ -181,7 +181,7 @@ body {
 }
 .bgLeaf {
   background-image: url("/assets/ecobox/leaf.png");
-  background-size: 95%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;

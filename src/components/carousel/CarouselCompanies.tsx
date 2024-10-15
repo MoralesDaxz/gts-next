@@ -21,7 +21,7 @@ const CarouselCompanies: FC<Props> = ({
 }) => {
   return (
     <Swiper
-      className={`w-full h-[90px] sm:h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1000px]`}
+      className={`w-[90%] h-[90px] sm:h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1000px]`}
       effect="slide"
       breakpoints={{
         330: {
