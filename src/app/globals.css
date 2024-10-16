@@ -223,4 +223,19 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Contact */
+.bgContact{
+  background-image: url("/assets/contact/bg.png");
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+}
+.bgForm{
+  background-image: url("/assets/ecobox/bg_white.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
