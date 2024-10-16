@@ -4,7 +4,8 @@ import WaveOne from "@/components/divider/WaveOne";
 import EcoBox from "@/components/eco/EcoBox";
 import Companies from "@/components/companies/Companies";
 import Statistics from "@/components/statistics/Statistics";
-
+import Contact from "@/components/contact/Contact";
+import WavesOpacity from "@/components/divider/WavesOpacity";
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
         <WaveOne color={"#1A5990"} />
         <Services />
         <EcoBox />
-      {/*   <WavesOpacity clase="" color="#F0F3F8" /> */}
-      <Companies/>
-      <Statistics/>
+        <Companies />
+        <Statistics />
+       {/* <WaveOne color={"#edf0f5"}/>  */}
+        <WavesOpacity color={"#edf0f5"}/>
+        <Contact />
       </main>
       <footer></footer>
     </>

@@ -9,7 +9,7 @@ const EcoBox = () => {
         <h2 className="text-title-sm md:text-title-md lg:text-title-lg text-center py-14">
           Comprometidos con el ambiente
         </h2>
-        <div className="flex justify-around items-center p-3 sm:gap-3 lg:gap-8 backdrop-blur-sm rounded-lg max-w-[1000px]">
+        <div className="flex justify-around items-center p-3 sm:gap-3 lg:gap-8 backdrop-blur-sm rounded-lg max-w-[1500px]">
           <article className="w-0 md:w-[50%] hidden md:block">
             <Image
               src={delivery}
