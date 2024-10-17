@@ -228,7 +228,6 @@ body {
   background-image: url("/assets/contact/bg.png");
   background-size: cover;
   background-position: center;
-
   background-repeat: no-repeat;
 }
 .bgForm{
@@ -238,4 +237,63 @@ body {
   background-repeat: no-repeat;
 }
 
+/* FORM - Clase general para el contenedor del input y el span */
+.float-label {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
 
+/* Estilo del input */
+.float-label .input {
+  width: 100%;
+  padding: 20px 5px 5px 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgba(187, 187, 187, 0.397);
+  border-radius: 10px;
+  color: #313131;
+  font-size: medium;
+  box-sizing: border-box;
+}
+
+/* Efecto hover en el input */
+.float-label .input:hover {
+  border-color: rgba(107, 106, 106, 0.397);
+}
+
+/* Efecto focus en el input */
+.float-label .input:focus {
+  border-color: rgba(42, 117, 71, 0.61);
+}
+
+/* Estilo del span para que funciones debe estar INPUT - REQUIRED*/
+.float-label .input + span {
+  color: rgb(1, 12, 4);
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: text;
+  transition: 0.3s ease;
+  padding: 2px 5px;
+  pointer-events: none;
+  /* Evitar que el span interfiera con los clics del usuario */
+}
+
+/* Estilo del span cuando el input está vacío y no tiene focus */
+.float-label .input:placeholder-shown + span {
+  top: 12.5px;
+  font-size: 0.9em;
+}
+
+/* Estilo del span cuando el input tiene focus o es válido */
+.float-label .input:focus + span,
+.float-label .input:valid + span {
+  top: -7px;
+  font-size: 0.8em;
+  font-weight: 400;
+  background-color: #022947;
+  color: #ededed;
+}

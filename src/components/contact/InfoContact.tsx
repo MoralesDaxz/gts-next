@@ -15,10 +15,8 @@ const InfoContact = () => {
         window.open(enlaceWhatsApp, "_blank");
       } */
   return (
-    <article className="w-full min-h-[400px] sm:w-[50%] text-white bgContact rounded-lg">
-    <h2 className="text-title-sm md:text-title-md lg:text-title-lg">
-      Contacto
-    </h2>
+    <article className="bgContact w-full h-full sm:w-[50%] text-white rounded-lg p-4 flex flex-col justify-center gap-3 ">
+   
     <p className="text-parag-sm md:text-parag-md lg:text-parag-lg">
       Si tienes dudas, ponte en contacto con nosotros a través del
       formulario y te responderemos lo antes posible.
@@ -73,7 +71,7 @@ const InfoContact = () => {
         Madrid - 28031 ¿Como llegar?
       </Link>
     </div>
-<Image src={contact} alt='img_contact' width={300} height={300} className='w-80% mx-auto'/>
+<Image src={contact} alt='img_contact' width={300} height={300} className='w-80% mx-auto rounded-md'/>
   </article>
   )
 }
