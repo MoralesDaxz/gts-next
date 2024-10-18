@@ -2,8 +2,8 @@ import React from "react";
 
 const Form = () => {
   return (
-    <article className="bgForm w-full sm:w-[30%] h-full text-[--blue0] rounded-lg">
-      <h2 className="text-subtitle-sm md:text-subtitle-md lg:text-subtitle-lg text-center my-5">
+    <article className="bgForm w-full sm:w-[40%] lg:w-[30%] h-full text-[--blue0] rounded-lg">
+      <h2 className="text-subtitle-sm md:text-subtitle-md  text-center my-5">
         Formulario
       </h2>
       <form

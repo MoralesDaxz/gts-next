@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "./Form";
-import InfoContact from "./InfoContact";
+import CardContact from "./CardContact";
 
 const Contact = () => {
   return (
@@ -9,7 +9,7 @@ const Contact = () => {
         Contacto
       </h2>
       <div className="sm:h-[500px] flex flex-col items-center sm:flex-row sm:justify-center sm:items-center gap-4 self-center">
-        <InfoContact />
+        <CardContact />
         <Form />
       </div>
     </section>

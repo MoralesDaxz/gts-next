@@ -27,8 +27,8 @@ const config: Config = {
         "subtitle-lg": ["1.9rem", { lineHeight: "1.9rem", fontWeight: "500" }],
         parag: ["1rem", { lineHeight: "1.1rem", fontWeight: "300" }],
         "parag-sm": ["1.1rem", { lineHeight: "1.1rem", fontWeight: "300" }],
-        "parag-md": ["1.2rem", { lineHeight: "1.2rem", fontWeight: "300" }],
-        "parag-lg": ["1.3rem", { lineHeight: "1.3rem", fontWeight: "400" }],
+        "parag-md": ["1.2rem", { lineHeight: "1.25rem", fontWeight: "300" }],
+        "parag-lg": ["1.3rem", { lineHeight: "1.4rem", fontWeight: "400" }],
 
 
       }
