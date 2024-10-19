@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     property="og:description"
     content="Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
   />
-  <meta property="og:image" content="https://i.ibb.co/dcdVcDT/gts.png" />
+  <meta property="og:image" content="https://i.ibb.co/ZTCLzxZ/gts.png" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta property="twitter:domain" content="https://gtservicios.es" />
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     name="twitter:description"
     content="Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
   />
-  <meta property="og:image" content="https://i.ibb.co/dcdVcDT/gts.png" />
+  <meta property="og:image" content="https://i.ibb.co/ZTCLzxZ/gts.png" />
 </head>;
 export default function RootLayout({
   children,
