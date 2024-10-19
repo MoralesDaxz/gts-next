@@ -11,7 +11,7 @@ const NavBarSM: FC<Props> = ({ scroll }) => {
   const bgNavBarDefault =
     "text-black bg-[--white0] rounded-br-lg  rounded-bl-lg";
   const bgNavBarScrolled =
-    "text-black  bg-[#b1b4b6c7] backdrop-blur-sm  rounded-br-lg  rounded-bl-lg";
+    "text-[--white1] bg-[#828586b6] backdrop-blur-sm  rounded-br-lg  rounded-bl-lg";
 
   return (
     <nav className={scroll > 50 ? bgNavBarScrolled : bgNavBarDefault}>

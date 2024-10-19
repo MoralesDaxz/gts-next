@@ -7,7 +7,7 @@ import Footer from "@/components/footer/Footer";
 export const metadata: Metadata = {
   title: "GTServicios - Gestión Transporte y Servicios a toda la Península",
   description:
-    "Expertos en transporte y logística, con mas de 40 años en el mercado ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes.",
+    "Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes.",
   keywords:
     "gtservicios,gtservicios,gt servicios,servicio transporte mercancia,transporte mercancia,transporte de carga,transporte de mercancia en vallecas,transporte de mercancia en vallecas madrid,transporte de mercancia madrid,transporte de paqueteria,logistica de paqueteria,logistica y transporte,transporte de mercancia en españa,transporte de mercancia a toda españa,servicio de paqueteria,gestion paqueteria",
 };
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   <meta property="og:url" content="https://www.gtservicios.es" />
   <meta
     property="og:description"
-    content="Expertos en transporte y logística, con mas de 40 años en el mercado ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
+    content="Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
   />
   <link rel="canonical" href="https://gtservicios.es" />
   <link rel="shortlink" href="https://gtservicios.es" />
