@@ -7,7 +7,7 @@ const NavBarMD: FC<Props> = ({ scroll }) => {
   const styleDefault =
     "relative z-40 w-full text-black flex justify-center items-center  rounded-br-lg  rounded-bl-lg transition-all duration-300";
   const bgNavBarDefault = `${styleDefault} h-[70px] bg-[--white0]`;
-  const bgNavBarScrolled = `${styleDefault} h-[55px] text-[--white1] bg-[#828586b6] backdrop-blur-md `;
+  const bgNavBarScrolled = `${styleDefault} h-[55px] text-[#e7ebec] bg-[#828586b6] backdrop-blur-md `;
   return (
     <nav className={scroll > 80 ? bgNavBarScrolled : bgNavBarDefault}>
       <Link href={"/"} className="absolute top-0 left-4 flex items-center h-full opacity-70 hover:opacity-100 transition-all duration-300">
