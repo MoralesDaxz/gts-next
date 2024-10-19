@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { ControlDisplayProvider } from "../context/ControlDisplay";
 import DisplayNavBar from "@/components/nav/DisplayNavBar";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ControlDisplayProvider>
           <DisplayNavBar />
           {children}
+          <Footer/>
         </ControlDisplayProvider>
       </body>
     </html>

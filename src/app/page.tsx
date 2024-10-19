@@ -9,9 +9,9 @@ import WavesOpacity from "@/components/divider/WavesOpacity";
 export default function Home() {
   return (
     <>
-      <main className="w-full rotate   ">
+      <main className="w-full">
         <MainLogo />
-        <WavesOpacity color={"#1A5990"} />
+        <WavesOpacity color={"#174c7a"} />
         <Services />
         <EcoBox />
         <Companies />
@@ -19,7 +19,6 @@ export default function Home() {
         <WavesOpacity color={"#edf0f5"} />
         <Contact />
       </main>
-      <footer></footer>
     </>
   );
 }

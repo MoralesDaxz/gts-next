@@ -4,8 +4,8 @@ import { companiesImgages } from "@/utils/companies/companies";
 import CarouselCompanies from "../carousel/CarouselCompanies";
 const Companies = () => {
   return (
-    <div className="bg-[--blue0] sm:min-h-[900px] text-white text-center flex flex-col justify-between pt-[30px] sm:pt-[60px]">
-      <h2 className="text-title-sm md:text-title-md lg:text-title-lg">
+    <div className="bg-[--blue0] sm:min-h-[900px] text-white text-center flex flex-col justify-between pt-[100px]">
+      <h2 className="text-title-sm md:text-title-md lg:text-title-lg mt-6 mb-14">
         Empresas que confían en nosotros
       </h2>
 

@@ -4,7 +4,7 @@ import { infoStats } from "@/utils";
 
 const Statistics = () => {
   return (
-    <section className="bgStat min-h-[400px] text-[--blue0] flex flex-wrap items-center gap-6 justify-center p-4">
+    <section className="bgStat min-h-[450px] text-[--blue0] flex flex-wrap items-center gap-6 lg:gap-4 justify-center py-14 px-2 md:px-[100px] lg:px-2">
       {infoStats.map((item, i) => {
         return (
           <StatsCard

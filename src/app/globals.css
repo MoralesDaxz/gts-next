@@ -16,6 +16,7 @@
   --creme: rgb(238, 228, 185);
   --white: rgb(255, 255, 255);
   --white0: rgb(227, 232, 235);
+  --white1: #e7ebec;
   --black: rgb(0, 0, 0);
 }
 
@@ -42,7 +43,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Outfit, sans-serif;
-  /*  color: #d9dfe45e; */
 }
 
 @layer utilities {
@@ -96,13 +96,13 @@ body {
 }
 
 /* BG - Main Logo */
-.bgMain {
-  background: rgb(4, 18, 31);
+.bgDegrade {
+  background: rgb(0, 20, 35);
   background: linear-gradient(
     180deg,
-    rgba(4, 18, 31, 1) 0%,
-    rgba(7, 58, 103, 1) 76%,
-    rgba(26, 89, 144, 1) 100%
+    rgb(0, 20, 35) 0%,
+    rgb(7, 53, 94) 76%,
+    rgb(23, 76, 122) 100%
   );
 }
 
@@ -126,8 +126,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(1.25);
-  /*   filter: blur(2px); */
-  /* Ajusta el valor de opacidad según sea necesario */
   z-index: -1;
 }
 
@@ -264,7 +262,7 @@ body {
 
 /* Efecto focus en el input */
 .float-label .input:focus {
-  border-color: rgba(42, 117, 71, 0.61);
+  border-color: rgb(53, 131, 191, 0.61);
 }
 
 /* Estilo del span para que funciones debe estar INPUT - REQUIRED*/

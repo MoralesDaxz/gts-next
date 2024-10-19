@@ -8,8 +8,8 @@ import { carsImages } from "@/utils/services/car";
 
 const Services = () => {
   return (
-    <section className="bgServices min-h-screen flex flex-col items-center gap-6 text-[--blue0] pt-[100px] sm:pt-[150px] px-4 pb-6">
-      <h1 className="text-title-sm md:text-title-md lg:text-title-lg">
+    <section className="bgServices min-h-screen flex flex-col items-center gap-6 text-[--blue0] pt-[100px] px-4">
+      <h1 className="text-title-sm md:text-title-md lg:text-title-lg mt-6 mb-14">
         Servicios
       </h1>
       <article

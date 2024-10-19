@@ -4,8 +4,8 @@ import CardContact from "./CardContact";
 
 const Contact = () => {
   return (
-    <section className="min-h-[700px] bg-[--blue0] p-4 sm:p-10 flex flex-col">
-      <h2 className="text-title-sm md:text-title-md lg:text-title-lg text-center my-12">
+    <section className="min-h-[700px] bg-[--blue0] px-5 pt-[100px] flex flex-col pb-2">
+      <h2 className="text-title-sm md:text-title-md lg:text-title-lg text-center mt-6 mb-14">
         Contacto
       </h2>
       <div className="sm:h-[500px] flex flex-col items-center sm:flex-row sm:justify-center sm:items-center gap-4 self-center">

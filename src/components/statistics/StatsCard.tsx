@@ -9,7 +9,7 @@ type Props = {
 };
 const StatsCard: FC<Props> = ({ title, left, right, text }) => {
   return (
-    <div className="relative bg-[#ffffff6e] rounded-3xl flex flex-col items-center p-4 h-[210px] w-[80%] sm:w-[80%] min-w-[250px] sm:max-w-[250px] shadow-[#080a0f] shadow-md">
+    <div className="relative bg-[#ffffff6e] rounded-3xl flex flex-col items-center p-4 h-[210px] w-[70%] md:w-[80%] min-w-[250px] md:max-w-[250px]  shadow-[#080a0f] shadow-md">
       <Image
         src={blueBall}
         width={100}
