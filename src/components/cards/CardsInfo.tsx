@@ -17,6 +17,7 @@ const CardsInfo: FC<Props> = ({ claseContain }) => {
               alt={item.alt}
               prf={item.prf}
               title={item.title}
+              id={item.title}
               key={i}
             />
           );

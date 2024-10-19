@@ -7,17 +7,17 @@ type Props = {
   alt: string;
   prf: string;
   title: string;
+  id: string;
   children?: React.ReactNode;
 };
-const Card: FC<Props> = ({ src, alt, prf, title, children }) => {
+const Card: FC<Props> = ({ src, alt, prf, title, children, id }) => {
   const [isOpen, setIsOpen] = useState(false);
   const classContain =
-    "w-[45%] md:w-[30%] flex flex-col items-center justify-center gap-3 text-center shadow-black shadow-md rounded-lg pt-2 px-2 bg-[#050c1a2c] cursor-pointer h-[300px] border-solid border-2 border-[#77869e8e] hover:border-solid hover:border-2 hover:border-[#a5b2c5b9]";
+    "w-[45%] md:w-[30%] flex flex-col items-center justify-center gap-3 text-center text-white shadow-black shadow-md rounded-lg pt-2 px-2 bg-[#050c1a2c] cursor-pointer h-[300px] border-solid border-2 border-[#77869e8e] hover:border-solid hover:border-2 hover:border-[#a5b2c5b9]";
   const inactivePrf = "h-0 opacity-0 ease-out";
-  const activePrf =
-    "h-[130px] md:h-[110px] ease-in";
+  const activePrf = "h-[130px] md:h-[110px] ease-in";
   return (
-    <article className={classContain} onClick={() => setIsOpen(!isOpen)}>
+    <article id={id} className={classContain} onClick={() => setIsOpen(!isOpen)}>
       <h2 className=" text-subtitle-sm md:text-subtitle-md">{title}</h2>
       <Image
         src={src}
@@ -27,15 +27,15 @@ const Card: FC<Props> = ({ src, alt, prf, title, children }) => {
         alt={alt}
       />
 
-        <p
-          className={`font-extralight text-sm md:text-base transition-all duration-300 ${
-            isOpen ? activePrf : inactivePrf
-          }`}
-        >
-          {prf}
-        </p>
+      <p
+        className={`font-extralight text-sm md:text-base transition-all duration-300 ${
+          isOpen ? activePrf : inactivePrf
+        }`}
+      >
+        {prf}
+      </p>
 
-        {children}
+      {children}
 
       <Image
         src={top}

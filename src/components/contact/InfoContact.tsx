@@ -9,7 +9,7 @@ import { callUs, location, sendMsg, writeUs } from "@/utils";
 
 const InfoContact = () => {
   return (
-    <article className="flex flex-col gap-1">
+    <article className="flex flex-col gap-1 text-white">
       <div
         className="flex items-center gap-1 opacity-100 hover:opacity-80 cursor-pointer"
         onClick={(e) => {

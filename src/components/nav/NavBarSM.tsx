@@ -18,9 +18,9 @@ const NavBarSM: FC<Props> = ({ scroll }) => {
       <MenuBurger classMenu={classMenu} setClassMenu={setClassMenu} />
       {classMenu === "close" ? (
         <article className="transition-all duration-300 h-32 flex flex-col justify-center gap-4 py-2 px-4 text-lg font-medium">
-          <Link href={"/servicios"}>Servicios</Link>
-          <Link href={"/clientes"}>Nuestros Clientes</Link>
-          <Link href={"/contacto"}>Contacto</Link>
+          <Link href={"/servicios"} className="w-fit">Servicios</Link>
+          <Link href={"/clientes"} className="w-fit">Nuestros Clientes</Link>
+          <Link href={"/contacto"} className="w-fit">Contacto</Link>
         </article>
       ) : (
         <article className="transition-all duration-300 h-16 p-2">
