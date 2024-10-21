@@ -6,7 +6,6 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="bgDegrade flex flex-col items-center justify-center gap-5 p-3  text-white pt-10">
-     
       <section className="w-[90%] flex items-center justify-between gap-2 max-w-[1200px] ">
         <InfoContact color="white" classContain="text-white" />
         <Link href={"/"} className="w-fit max-h-[250px] ">

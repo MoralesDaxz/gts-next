@@ -3,7 +3,7 @@ type Props = {
   clase?: string;
   color?: string;
 };
-const WavesOpacity: FC<Props> = ({ clase, color }) => {
+const WaveCurves: FC<Props> = ({ clase, color }) => {
   return (
     <div className={`w-full absolute  ${clase}`}>
       <svg
@@ -21,4 +21,4 @@ const WavesOpacity: FC<Props> = ({ clase, color }) => {
   );
 };
 
-export default WavesOpacity;
+export default WaveCurves;

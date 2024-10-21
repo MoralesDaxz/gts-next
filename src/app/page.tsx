@@ -4,9 +4,9 @@ import EcoBox from "@/components/eco/EcoBox";
 import Companies from "@/components/companies/Companies";
 import Statistics from "@/components/statistics/Statistics";
 import Contact from "@/components/contact/Contact";
-import WavesOpacity from "@/components/divider/WavesOpacity";
 import CardsInfo from "@/components/cards/CardsInfo";
 import WaveOne from "@/components/divider/WaveOne";
+import WaveCurves from "@/components/divider/WaveCurves";
 
 export default function Home() {
   return (
@@ -14,13 +14,13 @@ export default function Home() {
       <main className="w-full relative">
         <MainLogo />
         <CardsInfo claseContain="bgDegrade" />
-        <WavesOpacity color={"#174c7a"} />
+        <WaveCurves color={"#174c7a"} />
         <Services />
         <Statistics />
-        <WavesOpacity color={"#edf0f5"} />
+        <WaveCurves color={"#edf0f5"} />
         <Companies />
         <Contact />
-        <WavesOpacity color={"#001423"} />
+        <WaveCurves color={"#001423"} />
         <EcoBox />
         <WaveOne clase="absolute bottom-0" color="#001423" />
       </main>
