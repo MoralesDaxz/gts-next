@@ -4,7 +4,7 @@ import CardContact from "./CardContact";
 
 const Contact = () => {
   return (
-    <section className="min-h-[700px] bg-[--blue0] px-5 pt-[100px] flex flex-col pb-2">
+    <section className="min-h-[700px] bg-[--blue0] px-5 pt-[100px] flex flex-col items-center pb-6 sm:pb-20 ">
       <h2 className="text-title-sm md:text-title-md lg:text-title-lg text-center text-white mt-6 mb-14">
         Contacto
       </h2>
@@ -12,6 +12,7 @@ const Contact = () => {
         <CardContact />
         <Form />
       </div>
+    {/*   <div className="h-[2px]  w-[95%]  bg-[#fffffff6] rounded-md mt-10"></div>  */}
     </section>
   );
 };

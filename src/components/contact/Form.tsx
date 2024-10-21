@@ -6,7 +6,7 @@ const Form = () => {
   return (
     <article className="bgForm w-full sm:w-[40%] lg:w-[30%] h-full text-[--blue0] rounded-lg">
       <h2 className="text-subtitle-sm md:text-subtitle-md  text-center my-5">
-        Formulario
+      ¿Cómo podemos ayudarte?
       </h2>
       <form
         action={`https://formsubmit.co/${tokenSubmit}`}
@@ -53,8 +53,9 @@ const Form = () => {
         </label>
         <label className="float-label">
           <textarea className="input" placeholder="" required minLength={7} />
+          {/* Quitar auto longitud */}
           <span className="select-none rounded-3xl">
-            ¿Cómo podemos ayudarte?
+           Descríbenos lo que necesitas.
           </span>
         </label>
         <div className="w-[40%] flex flex-col items-center justify-center">

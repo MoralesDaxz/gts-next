@@ -16,7 +16,7 @@ type Props = {
 const CarouselCars: FC<Props> = ({ imgWidth,imgHeight, arr, heightContainer }) => {
   return (
     <Swiper
-      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1000px]`}
+      className={`w-full h-[${heightContainer}px] mt-10 mb-4 text-black place-content-center max-w-[1500px]`}
       effect="slide"
       spaceBetween={10}
       breakpoints={{

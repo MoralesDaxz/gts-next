@@ -13,7 +13,7 @@ const CardContact = () => {
       <p className="text-parag-sm md:text-parag-md w-[90%] opacity-90">
         También puedes ponerte en contacto con nosotros a través del teléfono.
       </p>
-      <InfoContact />
+      <InfoContact color="white" classContain="text-white"/>
       <Image
         src={contact}
         alt="img_contact"

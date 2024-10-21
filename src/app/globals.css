@@ -28,20 +28,9 @@
 
 :root {
   font-family: "Outfit", "outfit", sans-serif;
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Outfit, sans-serif;
 }
 
@@ -100,12 +89,12 @@ body {
 
 /* BG - Main Logo */
 .bgDegrade {
-  background: rgb(0, 20, 35);
+  background: #001423;
   background: linear-gradient(
     180deg,
-    rgb(0, 20, 35) 0%,
+    #001423 0%,
     #07355e 76%,
-    rgb(23, 76, 122) 100%
+    #174c7a 100%
   );
 }
 
@@ -123,12 +112,12 @@ body {
   left: 0;
   width: 100%;
   min-height: 100%;
-  background-image: url("/assets/services/bg.png");
+  background-image: url("/assets/services/bg_white.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(1.25);
+  
   z-index: -1;
 }
 
@@ -175,7 +164,7 @@ body {
 }
 /* EcoBox */
 .bgWhite {
-  background-image: url("/assets/ecobox/bg_white.jpg");
+  background-image: url("/assets/ecobox/air.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,7 +184,7 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   height: 290px;
-  opacity: .8;
+  opacity: 0.8;
 }
 @media (min-width: 768px) {
   .bgCompanies {
@@ -216,8 +205,8 @@ body {
   }
 }
 /* Statistics */
-.bgStat{
-  background-image: url("/assets/ecobox/bg_white.jpg");
+.bgStat {
+  background-image: url("/assets/statistics/bg_white.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -225,14 +214,14 @@ body {
 }
 
 /* Contact */
-.bgContact{
+.bgContact {
   background-image: url("/assets/contact/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.bgForm{
-  background-image: url("/assets/ecobox/bg_white.jpg");
+.bgForm {
+  background-image: url("/assets/contact/bg_white.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

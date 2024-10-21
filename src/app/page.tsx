@@ -13,11 +13,11 @@ export default function Home() {
         <MainLogo />
         <WavesOpacity color={"#174c7a"} />
         <Services />
-        <EcoBox />
-        <Companies />
         <Statistics />
         <WavesOpacity color={"#edf0f5"} />
+        <Companies />
         <Contact />
+        <EcoBox />
       </main>
     </>
   );
