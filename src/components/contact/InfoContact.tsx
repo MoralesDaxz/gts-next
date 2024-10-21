@@ -1,10 +1,5 @@
 "use client";
 import React, { FC } from "react";
-import Image from "next/image";
-import email from "@/assets/contact/email.svg";
-import phone from "@/assets/contact/phone.svg";
-import wp from "@/assets/contact/whatsapp.svg";
-import position from "@/assets/contact/position.svg";
 import { callUs, location, sendMsg, writeUs } from "@/utils";
 type Props = {
   classContain: string;
@@ -20,13 +15,6 @@ const InfoContact: FC<Props> = ({ classContain, color }) => {
           writeUs();
         }}
       >
-        {/*  <Image
-          src={email}
-          alt="mail"
-          width={30}
-          height={30}
-          className="W-[30px]"
-        /> */}
         <svg width="27px" height="27px" viewBox="0 0 20 17" fill="none">
           <path
             d="M1 4.39258L8.8906 9.65298C9.5624 10.1008 10.4376 10.1008 11.1094 9.65298L19 4.39258M3 15.3926H17C18.1046 15.3926 19 14.4971 19 13.3926V3.39258C19 2.28801 18.1046 1.39258 17 1.39258H3C1.89543 1.39258 1 2.28801 1 3.39258V13.3926C1 14.4971 1.89543 15.3926 3 15.3926Z"
@@ -49,13 +37,6 @@ const InfoContact: FC<Props> = ({ classContain, color }) => {
             callUs();
           }}
         >
-          {/*  <Image
-            src={phone}
-            alt="mail"
-            width={30}
-            height={30}
-            className="W-[30px]"
-          /> */}
           <svg width="30" height="30" viewBox="0 0 24 25" fill="none">
             <path
               d="M3 5.39258C3 4.28801 3.89543 3.39258 5 3.39258H8.27924C8.70967 3.39258 9.09181 3.66801 9.22792 4.07635L10.7257 8.56979C10.8831 9.0419 10.6694 9.55789 10.2243 9.78044L7.96701 10.9091C9.06925 13.3538 11.0388 15.3233 13.4835 16.4256L14.6121 14.1683C14.8347 13.7232 15.3507 13.5095 15.8228 13.6668L20.3162 15.1647C20.7246 15.3008 21 15.6829 21 16.1133V19.3926C21 20.4971 20.1046 21.3926 19 21.3926H18C9.71573 21.3926 3 14.6768 3 6.39258V5.39258Z"
@@ -75,13 +56,6 @@ const InfoContact: FC<Props> = ({ classContain, color }) => {
           }}
           className="flex items-center gap-1 opacity-100 hover:opacity-80 cursor-pointer"
         >
-          {/* <Image
-            src={wp}
-            alt="mail"
-            width={30}
-            height={30}
-            className="W-[30px]"
-          /> */}
           <svg
             width="30"
             height="30"
@@ -100,13 +74,6 @@ const InfoContact: FC<Props> = ({ classContain, color }) => {
         </div>
       </div>
       <div className="flex items-center gap-1 opacity-100 hover:opacity-80 cursor-pointer">
-        {/*   <Image
-          src={position}
-          alt="mail"
-          width={30}
-          height={30}
-          className="W-[30px]"
-        /> */}
         <svg
           width="30px"
           height="30px"

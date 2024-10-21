@@ -90,12 +90,47 @@ body {
 /* BG - Main Logo */
 .bgDegrade {
   background: #001423;
-  background: linear-gradient(
-    180deg,
-    #001423 0%,
-    #07355e 76%,
-    #174c7a 100%
-  );
+  background: linear-gradient(180deg,
+      #001423 0%,
+      #07355e 76%,
+      #174c7a 100%);
+}
+
+/* .bgMain{
+  background-image: url("/assets/main/bg_blue.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+} */
+
+
+/* BG - MainLogo */
+.bgMain {
+  position: relative;
+  width: 100%;
+  min-height: 100svh;
+  background-color: #000f1a5e;
+}
+
+.bgMain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100svh;
+  background-image: url("/assets/main/bg_blue.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Asegúrate de que el contenido dentro de .bg-companies esté en un contexto superior al pseudo-elemento */
+.bgMain>* {
+  z-index: 1;
 }
 
 /* BG - Services */
@@ -117,12 +152,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
   z-index: -1;
 }
 
 /* Asegúrate de que el contenido dentro de .bg-companies esté en un contexto superior al pseudo-elemento */
-.bgServices > * {
+.bgServices>* {
   position: relative;
   z-index: 1;
 }
@@ -162,13 +196,15 @@ body {
     filter: contrast(110%);
   }
 }
+
 /* EcoBox */
-.bgWhite {
+.bgEco {
   background-image: url("/assets/ecobox/air.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .bgLeaf {
   background-image: url("/assets/ecobox/leaf.png");
   background-size: cover;
@@ -186,24 +222,28 @@ body {
   height: 290px;
   opacity: 0.8;
 }
+
 @media (min-width: 768px) {
   .bgCompanies {
     height: 400px;
     background-position: top;
   }
 }
+
 @media (min-width: 1100px) {
   .bgCompanies {
     height: 400px;
     background-position: 0px -50px;
   }
 }
+
 @media (min-width: 1408px) {
   .bgCompanies {
     height: 550px;
     background-position: 0px -100px;
   }
 }
+
 /* Statistics */
 .bgStat {
   background-image: url("/assets/statistics/bg_white.jpg");
@@ -215,11 +255,12 @@ body {
 
 /* Contact */
 .bgContact {
-  background-image: url("/assets/contact/bg.png");
+  background-image: url("/assets/contact/bg_black.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .bgForm {
   background-image: url("/assets/contact/bg_white.jpg");
   background-size: cover;
@@ -258,7 +299,7 @@ body {
 }
 
 /* Estilo del span para que funciones debe estar INPUT - REQUIRED*/
-.float-label .input + span {
+.float-label .input+span {
   color: rgb(1, 12, 4);
   position: absolute;
   left: 10px;
@@ -273,17 +314,38 @@ body {
 }
 
 /* Estilo del span cuando el input está vacío y no tiene focus */
-.float-label .input:placeholder-shown + span {
+.float-label .input:placeholder-shown+span {
   top: 12.5px;
   font-size: 0.9em;
 }
 
 /* Estilo del span cuando el input tiene focus o es válido */
-.float-label .input:focus + span,
-.float-label .input:valid + span {
+.float-label .input:focus+span,
+.float-label .input:valid+span {
   top: -7px;
   font-size: 0.8em;
   font-weight: 400;
   background-color: #022947;
   color: #ededed;
+}
+
+
+.waveOne {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waveOne svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 53px;
+}
+
+.waveOne .shape-fill {
+  fill: #001423;
 }

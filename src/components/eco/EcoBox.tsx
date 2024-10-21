@@ -4,7 +4,7 @@ import React from "react";
 
 const EcoBox = () => {
   return (
-    <section className="bgWhite w-full text-[--blue0]">
+    <section className="bgEco w-full text-[--blue0]">
       <div className="bgLeaf flex flex-col items-center justify-center w-full px-4 pt-10 pb-14 min-h-[500px]">
         <h2 className="text-title-sm md:text-title-md lg:text-title-lg text-center mt-6 mb-14">
           Comprometidos con el ambiente
