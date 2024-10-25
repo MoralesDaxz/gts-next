@@ -9,10 +9,10 @@ import { carsImages } from "@/utils/services/car";
 const Services = () => {
   return (
     <section className="bgServices min-h-screen flex flex-col items-center gap-6 text-[--blue0] pt-[100px] px-4">
-      <h1 className="text-title-sm md:text-title-md lg:text-title-lg mt-6 mb-14">
+      <h2 className="text-title-sm md:text-title-md lg:text-title-lg mt-6 mb-14">
         Servicios
-      </h1>
-      <article
+      </h2>
+      <section
         className={
           "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
@@ -41,8 +41,8 @@ const Services = () => {
             className="w-[80%] sm:w-full"
           />
         </section>
-      </article>
-      <article
+      </section>
+      <section
         className={
           "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
@@ -65,8 +65,8 @@ const Services = () => {
             className="w-[80%] sm:w-full"
           />
         </section>
-      </article>
-      <article
+      </section>
+      <section
         className={
           "flex flex-col sm:flex-row sm:justify-between sm:items-center max-w-[1000px] bg-[#fffdfd80] px-2 pt-2 rounded-md"
         }
@@ -95,10 +95,10 @@ const Services = () => {
             className="w-[80%] sm:w-full shadow-[#1f1f1ffa] drop-shadow-md"
           />
         </section>
-      </article>
+      </section>
       <article className="w-full">
         <h3 className="text-center text-title-sm md:text-title-md lg:text-title-lg mt-5">
-          Flotas en exclusiva a disposición del cliente
+          Logística con flota a disposición del cliente
         </h3>
         <Carousel imgHeight={200} imgWidth={200} heightContainer="250"  arr={carsImages}/>
       </article>

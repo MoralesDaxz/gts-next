@@ -96,15 +96,6 @@ body {
       #174c7a 100%);
 }
 
-/* .bgMain{
-  background-image: url("/assets/main/bg_blue.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-} */
-
-
 /* BG - MainLogo */
 .bgMain {
   position: relative;
@@ -272,7 +263,7 @@ body {
 .float-label {
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Estilo del input */

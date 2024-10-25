@@ -12,7 +12,6 @@ const Contact = () => {
         <CardContact />
         <Form />
       </div>
-    {/*   <div className="h-[2px]  w-[95%]  bg-[#fffffff6] rounded-md mt-10"></div>  */}
     </section>
   );
 };

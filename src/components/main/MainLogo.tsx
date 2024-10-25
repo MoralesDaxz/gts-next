@@ -11,7 +11,7 @@ const MainLogo = () => {
         width={500}
         height={500}
         alt="Logo"
-        className="w-[30%] sm:w-[48%] max-w-[250px] absolute right-0 bottom-6"
+        className="w-[30%] sm:w-[48%] max-w-[220px] absolute right-0 bottom-8"
       />
       <h1 className="w-[95%] text-header-sm md:text-header-md text-center text-white">
         Gestión Transporte y Servicios a toda la Península

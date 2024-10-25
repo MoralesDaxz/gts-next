@@ -1,12 +1,11 @@
-import { tokenSubmit  } from "@/utils";
+import { tokenSubmit } from "@/utils";
 import React from "react";
 
 const Form = () => {
-  
   return (
-    <article className="bgForm w-full sm:w-[40%] lg:w-[30%] h-full text-[--blue0] rounded-lg">
+    <section className="bgForm w-full sm:w-[40%] lg:w-[30%] h-full text-[--blue0] rounded-lg">
       <h2 className="text-subtitle-sm md:text-subtitle-md  text-center my-5">
-      ¿Cómo podemos ayudarte?
+        ¿Cómo podemos ayudarte?
       </h2>
       <form
         action={`https://formsubmit.co/${tokenSubmit}`}
@@ -20,6 +19,8 @@ const Form = () => {
             placeholder=""
             minLength={3}
             maxLength={40}
+            pattern="^[a-zA-Z]+$"
+            title="Only characters A - Z"
             required
           />
           <span className="select-none rounded-lg">Nombre</span>
@@ -31,6 +32,8 @@ const Form = () => {
             placeholder=""
             minLength={3}
             maxLength={40}
+            pattern="^[a-zA-Z]+$"
+            title="Only characters A - Z"
             required
           />
           <span className="select-none rounded-3xl">Apellido</span>
@@ -47,20 +50,25 @@ const Form = () => {
             placeholder=""
             required
             minLength={8}
-            maxLength={14}
+            maxLength={16}
           />
           <span className="select-none rounded-3xl">Telefono</span>
         </label>
         <label className="float-label">
-          <textarea className="input" placeholder="" required minLength={7} />
-          {/* Quitar auto longitud */}
+          <textarea
+            className="input max-h-[100px]"
+            placeholder=""
+            required
+            minLength={7}
+            maxLength={300}
+          />
           <span className="select-none rounded-3xl">
-           Descríbenos lo que necesitas.
+             Descríbenos lo que necesitas
           </span>
         </label>
         <div className="w-[40%] flex flex-col items-center justify-center">
           <input
-            className="w-fit p-2 bg-[--blue2] hover:bg-[--blue1] hover:scale-105 shadow-[#242323d7] shadow-md text-white text-center text-parag transition-all duration-300 my-2 rounded-lg cursor-pointer"
+            className="w-[90%] md:w-fit p-2 bg-[--blue2] hover:bg-[--blue1] hover:scale-105 shadow-[#242323d7] shadow-md text-white text-center text-parag transition-all duration-300 my-2 rounded-lg cursor-pointer"
             type="submit"
             value="Enviar"
           />
@@ -72,7 +80,7 @@ const Form = () => {
           />
         </div>
       </form>
-    </article>
+    </section>
   );
 };
 

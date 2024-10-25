@@ -15,7 +15,7 @@ const infoStats = [
     title: "Empleos",
     left: 80,
     right: "Indirectos",
-    text: "Consolidados en el sector, brindando confianza a nuestros clientes.",
+    text: "Ampliando nuestros lazos, somos más cada día.",
   },
   {
     title: "Seguridad",

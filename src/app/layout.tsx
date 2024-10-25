@@ -6,10 +6,11 @@ import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "Gestión Transporte y Servicios a toda la Península",
+
   description:
-    "Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes.",
+    "Expertos en logística, paquetería y almacenamiento. Con más de 40 años de experiencia, ofrecemos soluciones confiables y eficientes en Madrid y toda la peninsula para tus necesidades de envío.",
   keywords:
-    "gtservicios,gtservicios,gt servicios,servicio transporte mercancia,transporte mercancia,transporte de carga,transporte de mercancia en vallecas,transporte de mercancia en vallecas madrid,transporte de mercancia madrid,transporte de paqueteria,logistica de paqueteria,logistica y transporte,transporte de mercancia en españa,transporte de mercancia a toda españa,servicio de paqueteria,gestion paqueteria, vallecas transporte",
+    "gtservicios,gt servicios,servicio transporte mercancia,transporte mercancia,transporte de carga,transporte de mercancia en vallecas,transporte de mercancia en vallecas madrid,transporte de mercancia madrid,transporte de paqueteria,logistica de paqueteria,logistica y transporte,transporte de mercancia en españa,transporte de mercancia a toda españa,servicio de paqueteria,gestion paqueteria, vallecas transporte",
 };
 <head>
   <title>
@@ -17,35 +18,35 @@ export const metadata: Metadata = {
   </title>
 
   <meta name="author" content="https://github.com/MoralesDaxz" />
-  <meta name="copyright" content="© 2024 GTServicios" />
   <meta name="geo.region" content="ES" />
-  <meta name="geo.placename" content="Madrid, España" />
   <meta property="og:locale" content="es_ES" />
+  <meta name="geo.placename" content="Madrid, España" />
   <meta property="og:site_name" content="GTServicios" />
   <meta property="og:title" content="GTServicios" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://gtservicios.es" />
-  <meta
-    property="og:title"
-    content="Gestión Transporte y Servicios a toda la Península"
-  />
+  <meta name="copyright" content="© 2024 GTServicios" />
+
+  <meta property="og:url" content="https://www.gtservicios.es" />
   <meta
     property="og:description"
-    content="Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
+    content="Expertos en logística, paquetería y almacenamiento. Con más de 40 años de experiencia, ofrecemos soluciones confiables y eficientes en Madrid y toda la peninsula para tus necesidades de envío."
   />
   <meta property="og:image" content="https://i.ibb.co/ZTCLzxZ/gts.png" />
+  <meta property="og:image:alt" content="Transporte_paqueteria" />
+
   <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="https://gtservicios.es" />
-  <meta property="twitter:url" content="https://gtservicios.es" />
+  <meta property="twitter:domain" content="https://www.gtservicios.es" />
+  <meta property="twitter:url" content="https://www.gtservicios.es" />
   <meta
     name="twitter:title"
-    content="Gestión Transporte y Servicios a toda la Península"
+    content="GTServicios - Servicio logístico y transporte"
   />
   <meta
     name="twitter:description"
-    content="Expertos en transporte y logística, con más de 40 años en el mercado, ofrecemos soluciones eficientes y confiables para tus necesidades de envío. Logística precisa, envíos eficientes."
+    content="Expertos en logística, paquetería y almacenamiento. Con más de 40 años de experiencia, ofrecemos soluciones confiables y eficientes en Madrid y toda la peninsula para tus necesidades de envío."
   />
-  <meta property="og:image" content="https://i.ibb.co/ZTCLzxZ/gts.png" />
+  <meta name="twitter:image" content="https://i.ibb.co/ZTCLzxZ/gts.png" />
+
   <link rel="canonical" href="https://gtservicios.es" />
   <link rel="shortlink" href="https://gtservicios.es" />
 </head>;
@@ -56,8 +57,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ES">
-      <head></head>
-      <body>
+      <body className="w-full">
         <ControlDisplayProvider>
           <DisplayNavBar />
           {children}

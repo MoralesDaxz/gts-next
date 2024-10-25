@@ -17,8 +17,8 @@ const Card: FC<Props> = ({ src, alt, prf, title, children, id }) => {
   const inactivePrf = "h-0 opacity-0 ease-out";
   const activePrf = "h-[130px] md:h-[110px]  ease-in";
   return (
-    <article id={id} className={classContain} onClick={() => setIsOpen(!isOpen)}>
-      <h2 className=" text-subtitle-sm md:text-subtitle-md">{title}</h2>
+    <section id={id} className={classContain} onClick={() => setIsOpen(!isOpen)}>
+      <h3 className=" text-subtitle-sm md:text-subtitle-md">{title}</h3>
       <Image
         src={src}
         width={300}
@@ -46,7 +46,7 @@ const Card: FC<Props> = ({ src, alt, prf, title, children, id }) => {
         }`}
         alt={"touch"}
       />
-    </article>
+    </section>
   );
 };
 

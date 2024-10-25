@@ -16,6 +16,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   transpilePackages: ["ui", "api"],
+ 
 };
 
 export default nextConfig;

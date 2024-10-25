@@ -17,12 +17,10 @@ const StatsCard: FC<Props> = ({ title, left, right, text }) => {
         alt="bg"
         className="absolute mx-auto top-14 w-[130px] z-0"
       />
-      <p className="text-subtitle-sm md:text-subtitle-md">{title}</p>
+      <h3 className="text-subtitle-sm md:text-subtitle-md">{title}</h3>
       <p className="h-[120px] z-10 text-[24px] flex flex-row gap-2 justify-center items-center font-bold text-center">
         <span className="text-[80px]">{left}</span> &nbsp;{right}
       </p>
-      {/*   <div className="h-[1px] w-[80%] bg-[#01255396] self-center"></div> */}
-
       <p className="text-center text-base font-normal leading-4">{text}</p>
     </div>
   );
